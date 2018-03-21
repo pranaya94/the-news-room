@@ -1,0 +1,3 @@
+targets:
+  latestest: shared-eu-west-1/cjf1gaw007hgf0171adba2rdr
+  default: latestest
