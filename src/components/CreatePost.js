@@ -4,12 +4,12 @@ import { gql, graphql, compose } from 'react-apollo'
 
 class CreatePost extends React.Component {
 
-  constructor(props){
-    super(props);
-    this.handlePost = this.handlePost.bind(this);
-  }
+  // constructor(props){
+  //   super(props);
+  //   this.handlePost = this.handlePost.bind(this);
+  // }
   state = {
-    description: '',
+    description: ''
   }
 
   render () {
@@ -24,12 +24,12 @@ class CreatePost extends React.Component {
           <input
             className='w-100 pa3 mv2'
             value={this.state.description}
-            placeholder='Description'
+            placeholder='Enter text here'
             onChange={(e) => this.setState({description: e.target.value})}
           />         
          
           {this.state.description &&
-            <button className='pa3 bg-black-10 bn dim ttu pointer' onClick={this.handlePost}>Post</button>
+            <button className='btn btn-success' onClick={this.handlePost}>Post</button>
           }
         </div>
       </div>
@@ -43,15 +43,15 @@ class CreatePost extends React.Component {
     if (!loggedInUser) {
       console.warn('Only logged in users can create new posts')
       this.props.history.push('/')
-      return
+      return;
     }
 
     const { description } = this.state
     const authorId = loggedInUser.id
 
     await this.props.CreatePostMutation({variables: { description, authorId }})
-    this.props.history.push('/')
-    return;
+    // this.props.history.push('/')
+    window.location = "/";
   }
 }
 

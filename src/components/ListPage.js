@@ -5,6 +5,7 @@ import { gql, graphql } from 'react-apollo'
 class ListPage extends React.Component {
 
   render () {
+    console.log("render of listpage called");
     if (this.props.data.loading) {
       return (<div>Loading</div>)
     }

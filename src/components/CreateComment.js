@@ -5,36 +5,42 @@ class CreateComment extends React.Component {
 
   constructor(props){
     super(props)
+    this.state = { description : ''}
+    this.handleChange = this.handleChange.bind(this)
     this.handleComment = this.handleComment.bind(this)
   }
-  state = {
-    description : ''
+ 
+  handleChange(e){
+    this.setState({ description : e.target.value });
   }
+
+  handleComment = async () => {
+    // console.log(this.props);
+    const { description } = this.state
+    const  postId  = this.props.postId
+    const authorId = this.props.authorId
+    const resp =  await this.props.CreateCommentMutation({variables: { description, postId, authorId }});
+    console.log(resp);
+    // this.setState({description: description});
+    // console.log(this.props.data.updatePost);
+    // this.props.history.push('/')
+    window.location = "/";
+  }
+
 
   render () {
   
     return (
     <div style={{"marginTop" : "10px", "marginBottom" : "10px"}}>
-      <input style = {{display:"block", width:"100%", borderRadius:"10px", borderStyle:"none", marginBottom:"10px"}} placeholder="Enter comment here"  onChange={(e) => this.setState({description: e.target.value})}/>      
+      <input style = {{display:"block", width:"100%", borderRadius:"10px", borderStyle:"none", marginBottom:"10px"}} 
+      value = {this.state.description}
+      placeholder="Enter comment here"  onChange={this.handleChange}/>      
       {this.state.description &&
             <button className='btn btn-success' onClick={this.handleComment}>Post</button>
           }
     </div>
     )
   } 
-
-
-  handleComment = async () => {
-    console.log(this.props);
-    const { description } = this.state
-    const  postId  = this.props.postId
-    const authorId = this.props.authorId
-    const resp =  await this.props.CreateCommentMutation({variables: { description, postId, authorId }});
-    console.log(resp);
-    this.setState({description: description});
-    // console.log(this.props.data.updatePost);
-    // this.props.history.push('/')
-  }
 
 }
 

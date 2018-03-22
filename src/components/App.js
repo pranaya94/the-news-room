@@ -74,6 +74,7 @@ class App extends React.Component {
   }
 
   renderLoggedIn() {
+    console.log("render loggedin called");
     return (
       <div>       
         <nav className="navbar navbar-inverse">

@@ -23,7 +23,7 @@ export default class Post extends React.Component {
   render () {
 
     return (
-      <div style={{"backgroundColor" : "#d3dfff", "padding" : "10px", "margin" : "20px", "borderRadius" : "10px","font-family" : "sans-serif"}}>
+      <div style={{"backgroundColor" : "#d3dfff", "padding" : "10px", "margin" : "20px", "borderRadius" : "10px","fontFamily" : "sans-serif"}}>
           <div className='card'> 
             <div className='card-body'>
             <strong>{this.props.post.author.facebookEmail}&nbsp; {new Date(this.props.post.updatedAt).toDateString()}&nbsp;</strong>
