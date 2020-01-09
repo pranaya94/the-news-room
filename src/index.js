@@ -1,1 +1,3 @@
-update kar do
+{
+    "data": "i wrote this schema in postman"
+}
