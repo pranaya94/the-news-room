@@ -1,3 +1,3 @@
 {
-    "data": "i wrote this schema in postman"
+    "something": "here"
 }
