@@ -1,3 +1,3 @@
 {
-    "something": "here"
+    "data" : "i wrote this in postman"
 }
