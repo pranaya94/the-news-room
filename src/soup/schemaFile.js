@@ -1,1 +1,3 @@
-{ "data": "postman updated in postman" }
+{
+    "data": "from also linked to the-news-room"
+}
