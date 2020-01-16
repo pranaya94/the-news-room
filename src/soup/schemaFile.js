@@ -1,3 +1,3 @@
 {
-    "data": "from also linked to the-news-room updated"
+    "data": "from new schema file exists"
 }
