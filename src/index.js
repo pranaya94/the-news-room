@@ -11,7 +11,7 @@ paths:
       operationId: listUser
       tags:
         - user
-      parameters:
+      parameters:sdf
         - name: id
           in: query
           description: ID of the user
