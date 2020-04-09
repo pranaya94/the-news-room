@@ -9,7 +9,7 @@ types:
         properties:
             id:
                 required: true
-                type: integer
+                type: integersdf
             name:
                 required: true
                 type: string
