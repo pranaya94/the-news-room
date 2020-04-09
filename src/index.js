@@ -1,65 +1,34 @@
-openapi: 3.0.0
-info:
-  version: 1
-  title: real time
-servers:
-  - url: 'http://localhost:3000'
-paths:
-  /user:
-    get:
-      summary: 'Sample endpoint: Returns details about a particular user'
-      operationId: listUser
-      tags:
-        - user
-      parameters:
-        - name: id
-          in: query
-          description: ID of the user
-          required: true
-          schema:
-            type: integer
-            format: int32
-      responses:
-        '200':
-          description: 'Sample response: Details about a user by ID'
-          headers:
-            x-next:
-              description: A link to the next page of responses
-              schema:
-                type: string
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/User'
-        default:
-          description: Unexpected error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
-components:
-  schemas:
+#%RAML 1.0
+title: a
+version: 1
+baseUri: http://localhost:3000
+mediaType: application/json
+types:
     User:
-      type: object
-      required:
-        - id
-        - name
-      properties:
-        id:
-          type: integer
-          format: int64
-        name:
-          type: string
-        tag:
-          type: string
-    Error:
-      type: object
-      required:
-        - code
-        - message
-      properties:
-        code:
-          type: integer
-          format: int32
-        message:
-          type: string
+        type: object
+        properties:
+            id:
+                required: true
+                type: integer
+            name:
+                required: true
+                type: string
+/users:
+    get:
+        description: List all Users matching query criteria.
+        queryParameters:
+            name:
+                required: false
+                type: string
+                example: "John"
+        responses:
+            200:
+                body:
+                    application/json:
+                        type: User
+                        example: { "id": 1, "name": "John" }
+            200:
+                body:
+                    application/json:
+                        type: User
+                        example: { "id": 1, "name": "John" }                
