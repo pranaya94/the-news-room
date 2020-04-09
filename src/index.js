@@ -1,6 +1,6 @@
 #%RAML 1.0
 title: a
-version: 1
+version: 1sdfg
 baseUri: http://localhost:3000
 mediaType: application/json
 types:
