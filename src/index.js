@@ -1,12 +1,12 @@
 openapi: 3.0.0
 info:
   version: 1
-  title: New Corona
+  title: Corona
 servers:
   - url: 'http://localhost:3000'
 paths:
   /user:
-    get:
+    get:k
       summary: 'Sample endpoint: Returns details about a particular user'
       operationId: listUser
       tags:
