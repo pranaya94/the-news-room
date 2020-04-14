@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  version: 1
+  version: 12
   title: sanity
 servers:
   - url: 'http://localhost:3000'
