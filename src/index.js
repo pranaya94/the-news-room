@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
-  version: 22345
-  title: New runsssdf
+  version: 2
+  title: New runs
 servers:
   - url: 'http://localhost:3000'
 paths:
