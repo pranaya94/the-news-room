@@ -3,7 +3,7 @@ info:
   version: 1
   title: access token delete
 servers:
-  - url: 'http://localhost:3000'
+  - url: 'http://localhost:3000d'
 paths:
   /user:
     get:
