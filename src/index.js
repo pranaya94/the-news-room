@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  version: 1234
+  version: 12345
   title: New runs
 servers:
   - url: 'http://localhost:3000'
