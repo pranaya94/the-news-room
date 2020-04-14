@@ -1,13 +1,13 @@
 openapi: 3.0.0
 info:
   version: 1
-  title: New runs
+  title: Sanity 4:31
 servers:
   - url: 'http://localhost:3000'
 paths:
   /user:
     get:
-      summary: 'Sample endpoint: Returns details abasdfout a particular user'
+      summary: 'Sample endpoint: Returns details about a particular user'
       operationId: listUser
       tags:
         - user
