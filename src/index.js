@@ -1,13 +1,13 @@
 openapi: 3.0.0
 info:
-  version: 1
-  title: Sanity 4:3133
+  version: 223451k
+  title: New runsssdf
 servers:
   - url: 'http://localhost:3000'
 paths:
   /user:
     get:
-      summary: 'Sample endpoint: Returns details about a particular user'
+      summary: 'Sample endpoint: Returns details abasdfout a particular user'
       operationId: listUser
       tags:
         - user
