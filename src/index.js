@@ -1,13 +1,13 @@
 openapi: 3.0.0
 info:
-  version: 223451k
-  title: New runsssdf
+  version: 1
+  title: access token delete
 servers:
   - url: 'http://localhost:3000'
 paths:
   /user:
     get:
-      summary: 'Sample endpoint: Returns details abasdfout a particular user'
+      summary: 'Sample endpoint: Returns details about a particular user'
       operationId: listUser
       tags:
         - user
