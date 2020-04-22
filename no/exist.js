@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   version: 1
-  title: Sanity 4:34454jds423s
+  title: Sanity 4:34454jds423ssdf
 servers:
   - url: 'http://localhost:3000'
 paths:
