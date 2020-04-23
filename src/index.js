@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   version: 1
-  title: Abort Fixes
+  title: Abort Fixess
 servers:
   - url: 'http://localhost:3000'
 paths:
