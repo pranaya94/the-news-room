@@ -162,7 +162,7 @@ paths:
         default:
           description: Unexpected error
           content:
-            application/json:
+            application/json:v
               schema:
                 $ref: '#/components/schemas/Error'
 components:
