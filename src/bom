@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   version: 1
-  title: A1 no run
+  title: A1 no rundf
 servers:
   - url: 'http://localhost:3000'
 paths:
