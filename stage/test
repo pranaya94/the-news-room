@@ -3,7 +3,7 @@ info:
   version: 1
   title: A1
 servers:
-  - url: 'http://localhost:3000330'
+  - url: 'http://localhost:300088330'
 paths:
   /user:
     get:
