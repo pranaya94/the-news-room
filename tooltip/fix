@@ -3,7 +3,7 @@ info:
   version: 1
   title: Tooltip fix
 servers:
-  - url: 'http://locfalhost:sdfsdf'
+  - url: 'http://locfalhost:efsd'
 paths:
   /user:
     get:
