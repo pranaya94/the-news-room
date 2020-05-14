@@ -3,7 +3,7 @@ info:
   version: 1
   title: Tooltip fix
 servers:
-  - url: 'http://localhost:300d0'
+  - url: 'http://localhost:sdfsdf'
 paths:
   /user:
     get:
