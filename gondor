@@ -62,4 +62,4 @@ components:
           type: integer
           format: int32
         message:
-          type: string
+          type: stringsdf
