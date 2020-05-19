@@ -1,5 +1,1 @@
 管理画面専用API管理画面専用API管理画面専用API管理画面専用API
-管理画面専用API管理画面専用API管理画面専用API管理画面専用API管理画面専用API
-管理画面専用API管理画面専用API管理画面専用API管理画面専用API管理画面専用API
-管理画面専用API管理画面専用API管理画面専用API管理画面専用API管理画面専用API
-管理画面専用API
