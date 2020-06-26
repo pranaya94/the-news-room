@@ -1,9 +1,9 @@
 openapi: 3.0.0
 info:
   version: 1
-  title: d1
+  title: A1
 servers:
-  - url: 'http://d:30e3k3sdf00'
+  - url: 'http://localhost:3000'
 paths:
   /user:
     get:
