@@ -3,7 +3,7 @@ info:
   version: 1
   title: d1
 servers:
-  - url: 'http://d:30e3k300'
+  - url: 'http://d:30e3k3sdf00'
 paths:
   /user:
     get:
