@@ -1,13 +1,13 @@
 openapi: 3.0.0
 info:
-  version: 1
-  title: test
+  vrsion: 1
+  title: 'a'
 servers:
-  - url: 'http://localhost:3000'
+  - url: "1"
 paths:
   /user:
     get:
-      summary: 'Sample endpoint: Returns details about a particular user'
+      summary: 12
       operationId: listUser
       tags:
         - user
@@ -45,9 +45,7 @@ components:
         - id
         - name
       properties:
-        id:
-          type: integer
-          format: int64
+        id: []
         name:
           type: string
         tag:
