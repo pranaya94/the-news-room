@@ -1,13 +1,13 @@
 openapi: 3.0.0
 info:
-  vrsion: 1
-  title: 'a'
+  version: 1
+  title: sanitize
 servers:
-  - url: "1"
+  - url: 'http://localhost:3000'
 paths:
   /user:
     get:
-      summary: 12
+      summary: 'Sample endpoint: Returns details about a particular user'
       operationId: listUser
       tags:
         - user
@@ -45,7 +45,9 @@ components:
         - id
         - name
       properties:
-        id: []
+        id:
+          type: integer
+          format: int64
         name:
           type: string
         tag:
