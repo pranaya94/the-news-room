@@ -3,7 +3,7 @@ info:
   version: 1
   title: sanitize
 servers:
-  - url: 'http://localhosdfst:3000'
+  - url: 'http://localhosdsdffst:3000'
 paths:
   /user:
     get:
