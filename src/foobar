@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  version: updated by bar
+  version: updated by bar here
   title: a2
 servers:
   - url: 'http://localhost:3000'
