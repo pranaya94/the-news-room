@@ -7,7 +7,7 @@ servers:
 paths:
   /user:sdf
     get:
-      summary: 'Sample endpoint: Returns details about a particular user'
+      summary: 'Sample endpoint: Returns sdfdetails about a particular user'
       operationId: listUser
       tags:
         - user
