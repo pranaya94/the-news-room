@@ -3,7 +3,7 @@ info:
   title: "OpenWeasdftherMap API"
   description: "asdf"
   version: "2.5"
-  termsOfService: "https://openweathermap.org/terms"
+  termsOfService: "https://openweathkermap.org/terms"
   contact:
     name: "OpenWeatherMap API"
     url: "https://openweathermap.org/api"
